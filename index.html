@@ -173,6 +173,7 @@
       grid-template-columns: repeat(3, 1fr);
       gap: 12px;
       margin-bottom: 20px;
+      min-height: 100px;
     }
     .product-card {
       background: #141414;
@@ -518,12 +519,12 @@
   <div class="section-box">
     <div class="section-title" id="txt-pay-method-title">SELECT PAYMENT METHOD</div>
     <div class="payment-grid">
-      <div class="pay-card" onclick="selectPayMethod('upi')">
+      <div class="pay-card">
         <span class="check-mark">✔</span>
         <div class="pay-icon-box">💳</div>
         <div class="pay-title">UPI</div>
       </div>
-      <div class="pay-card inactive" onclick="selectPayMethod('wallet')">
+      <div class="pay-card inactive">
         <div class="pay-icon-box">₹</div>
         <div class="pay-title" id="txt-wallet">WALLET</div>
       </div>
@@ -535,7 +536,7 @@
     <div class="checkout-header">
       <div>
         <div class="total-label" id="txt-total-label">TOTAL PAYABLE</div>
-        <div class="total-amount" id="total-price-display">₹39</div>
+        <div class="total-amount" id="total-price-display">₹214</div>
       </div>
       <div>
         <div class="via-text" id="txt-via">PAYMENT VIA</div>
@@ -649,7 +650,7 @@
       { category: 'permanent', name: 'Tiger', price: 1724, icon: '🐅' }
     ];
 
-    let currentSelectedPrice = 39;
+    let currentSelectedPrice = 214;
 
     const translations = {
       en: {
@@ -662,4 +663,4 @@
         payMethodTitle: "SELECT PAYMENT METHOD", wallet: "WALLET", totalLabel: "TOTAL PAYABLE",
         payVia: "PAYMENT VIA", proceedPay: "PROCEED TO PAY ⚡", secureTrans: "SECURE ENCRYPTED TRANSACTION",
         newsTitle: "Don't miss our latest News", newsEmail: "Email address", subscribe: "Subscribe",
-        disclaimer: "Blox Fruit Hub is the premier marketplace for acquiring exclusive and high-quality Roblox items. Enjoy lightning-fast delivery, secure payments, and a trusted service that has helped thousands of gamers enhan
+        disclaimer: "Blox Fruit Hub is the premier marketplace for acquiring exclusive and high-quality Roblox items. Enjoy lightning-fast delivery, secure payments, and a trusted service that has helped thousands of gamers enhance their experience.<br/><br/>Blox Fruit H
